@@ -1,0 +1,15 @@
+mysql.shard.conn:
+  shard0:
+    url: r2dbc:pool:mariadb://127.0.0.1:3306/shard0
+    username: foo
+    password: bar
+    pool:
+      initial-size: 10
+      max-size: 20
+  shard1:
+    url: r2dbc:pool:mariadb://127.0.0.1:3306/shard1
+    username: foo
+    password: bar
+    pool:
+      initial-size: 10
+      max-size: 20
